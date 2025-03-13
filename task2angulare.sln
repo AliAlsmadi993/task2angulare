@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "task2angulare.client", "task2angulare.client\task2angulare.client.esproj", "{3E208E4C-40AF-7241-2F02-7E3F52EDF488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task2angulare.Server", "task2angulare.Server\task2angulare.Server.csproj", "{33590C59-4DC0-4718-9B52-F020F44DAC10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E208E4C-40AF-7241-2F02-7E3F52EDF488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E208E4C-40AF-7241-2F02-7E3F52EDF488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E208E4C-40AF-7241-2F02-7E3F52EDF488}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3E208E4C-40AF-7241-2F02-7E3F52EDF488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E208E4C-40AF-7241-2F02-7E3F52EDF488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E208E4C-40AF-7241-2F02-7E3F52EDF488}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{33590C59-4DC0-4718-9B52-F020F44DAC10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33590C59-4DC0-4718-9B52-F020F44DAC10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33590C59-4DC0-4718-9B52-F020F44DAC10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33590C59-4DC0-4718-9B52-F020F44DAC10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1972622F-54F1-4C71-8C2E-9BB340FC54AD}
+	EndGlobalSection
+EndGlobal
