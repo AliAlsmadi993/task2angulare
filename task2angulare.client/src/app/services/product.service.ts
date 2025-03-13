@@ -9,11 +9,24 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  getAllProducts(callback: (data: { products: any[] }) => void): void {
-    this.http.get<{ products: any[] }>(this.apiUrl).subscribe(callback);
+  getAllProducts(callback: (data: any) => void): void {
+    this.http.get<any>(this.apiUrl).subscribe(response => callback(response.products));
   }
 
   getProductById(id: number, callback: (data: any) => void): void {
     this.http.get<any>(`${this.apiUrl}/${id}`).subscribe(callback);
+  }
+
+  getAllCategories(callback: (categories: any) => void): void {
+    this.http.get<any>(this.apiUrl).subscribe(response => {
+      const categories = [...new Set(response.products.map((product: any) => product.category))];
+      callback(categories);
+    });
+  }
+
+  getProductsByCategory(category: string, callback: (data: any) => void): void {
+    this.http.get<any>(`${this.apiUrl}/category/${category}`).subscribe(response => {
+      callback(response.products);
+    });
   }
 }
