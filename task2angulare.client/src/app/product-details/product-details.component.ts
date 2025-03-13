@@ -7,9 +7,13 @@ import { ProductService } from '../services/product.service';
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
+
+
+
 export class ProductDetailsComponent implements OnInit {
   product: any;
 
+ 
   constructor(private productService: ProductService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
